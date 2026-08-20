@@ -23,12 +23,12 @@ ecommerce-returns-analysis-pipeline/
 │
 ├── README.md
 │
-├── Ecommerce_Returns_Analysis_Pipeline.ipynb   # Full Colab-ready pipeline notebook
+├── Ecommerce_Returns_Analysis_Pipeline.ipynb   
 │
 ├── data/
-│   ├── ecommerce_returns_raw.csv                   # Raw messy dataset
-│   ├── ecommerce_returns_cleaned.csv                # Cleaned, human-readable dataset
-│   └── ecommerce_returns_encoded.csv                # Encoded + normalized, ML-ready dataset
+│   ├── ecommerce_returns_raw.csv                   
+│   ├── ecommerce_returns_cleaned.csv               
+│   └── ecommerce_returns_encoded.csv               
 │
 ├── charts/
 │   ├── insight1_return_rate_category.png
@@ -122,22 +122,6 @@ Price and order value are strongly correlated, as expected. No single numeric fe
 - matplotlib, seaborn
 - scikit-learn (LabelEncoder, MinMaxScaler)
 - Google Colab / Jupyter Notebook
-
-## How to Run
-
-1. Open `notebook/Ecommerce_Returns_Analysis_Pipeline.ipynb` in Google Colab or Jupyter.
-2. Run all cells in order (the notebook is self-contained and generates its own raw dataset, so no upload is required).
-3. To use your own dataset instead, replace the data-generation cell with:
-   ```python
-   df = pd.read_csv("your_file.csv")
-   ```
-4. The cleaned and encoded datasets are exported automatically to `ecommerce_returns_cleaned.csv` and `ecommerce_returns_encoded.csv`.
-
-## Deliverables
-
-- Cleaned dataset (`data/ecommerce_returns_cleaned.csv`)
-- EDA notebook (`notebook/Ecommerce_Returns_Analysis_Pipeline.ipynb`)
-- Insight presentation report (`presentation/Ecommerce_Returns_Insight_Presentation.pptx`)
 
 ## License
 
